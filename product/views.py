@@ -18,9 +18,9 @@ def get_home_page_content(request):
     topSellingCubes = ProductCardSerialiazer(topSellingCubes, many=True)
     bestCubes = ProductCardSerialiazer(bestCubes, many=True)
     return Response({
-        "Trending Cubes": trendingCubes.data,
-        "Top Selling Cubes": topSellingCubes.data,
-        "Our Best Cubes": bestCubes.data
+        "Trending ": trendingCubes.data,
+        "Top Selling": topSellingCubes.data,
+        "Our Best": bestCubes.data
     })
 
 

@@ -1,5 +1,6 @@
-from django.db import models
 from django.core.validators import MaxValueValidator, MinValueValidator
+from django.db import models
+
 # Create your models here.
 
 typeChoice = (
@@ -9,15 +10,23 @@ typeChoice = (
     ('best_cubes', 'best_cubes')
 )
 catagory_choice = (
-    ('Standard Speed Cube', 'Standard Speed Cube'),
-    ('Pyramix', 'Pyramix'),
-    ('Megamix', 'Megamix'),
-    ('Skewb', 'Skewb'),
-    ('Square-1', 'Square-1'),
-    ('Mirror Cube', 'Mirror Cube'),
-    ('Gear Cube', 'Gear Cube'),
-    ('Locking Puzzels', 'Locking Puzzels'),
+    ('BEDS', 'BEDS'),
+    ('SOFA', 'SOFA'),
+    ('TABLE', 'TABLE'),
+    ('DINNING TABLE', 'DINNING TABLE'),
+    ('CUBOARDS', 'CUBOARDS'),
+    ('SHOW PICES', 'SHOW PICES'),
+    ('DRESSING TABLE', 'DRESSING TABLE'),
+    ('CENTER TABLE', 'CENTER TABLE'),
 )
+
+
+
+
+
+
+
+
 
 
 class Product(models.Model):
